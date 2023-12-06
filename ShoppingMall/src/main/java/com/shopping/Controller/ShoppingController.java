@@ -72,7 +72,7 @@ public class ShoppingController {
 	@PatchMapping("/customer-detail/{id}")
 	public void updateData1(@PathVariable Integer id, @RequestBody Mall mall) {
 		try {
-		 service.save(mall,id); 
+		 service.save(mall); 
 		}
 		catch(Exception e) {
 			
