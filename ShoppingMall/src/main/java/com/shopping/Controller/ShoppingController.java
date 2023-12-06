@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -62,6 +63,15 @@ public class ShoppingController {
 		try {
 		//Checks whether the data is exists
 		Mall existMall = service.get(id);
+		 service.save(mall); 
+		}
+		catch(Exception e) {
+			
+		}
+	}
+	@PatchMapping("/customer-detail/{id}")
+	public void updateData1(@PathVariable Integer id, @RequestBody Mall mall) {
+		try {
 		 service.save(mall); 
 		}
 		catch(Exception e) {
