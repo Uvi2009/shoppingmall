@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.shopping.Entity.Mall;
 import com.shopping.Service.ShoppingService;
 
-@CrossOrigin(origins = "http://localhost:5500/src/component/kunthani.html")
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 public class ShoppingController {
 
