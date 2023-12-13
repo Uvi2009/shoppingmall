@@ -60,7 +60,7 @@ public class ShoppingController {
 
 	@CrossOrigin(origins = "http://localhost:3000")
 	//update
-	@PutMapping("/customer-detail/")
+	@PutMapping("/customer-detail")
 	public void updateData( @RequestBody Mall mall) {
 		try {
 		//Che
