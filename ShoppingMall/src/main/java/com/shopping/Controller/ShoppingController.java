@@ -57,7 +57,8 @@ public class ShoppingController {
 	 {
 	 service.delete(id);
 	 }
-	
+
+	@CrossOrigin(origins = "http://localhost:3000")
 	//update
 	@PutMapping("/customer-detail/{id}")
 	public void updateData(@PathVariable Integer id, @RequestBody Mall mall) {
