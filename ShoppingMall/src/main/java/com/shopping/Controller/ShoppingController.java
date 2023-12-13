@@ -60,11 +60,10 @@ public class ShoppingController {
 
 	@CrossOrigin(origins = "http://localhost:3000")
 	//update
-	@PutMapping("/customer-detail/{id}")
-	public void updateData(@PathVariable Integer id, @RequestBody Mall mall) {
+	@PutMapping("/customer-detail/")
+	public void updateData( @RequestBody Mall mall) {
 		try {
-		//Checks whether the data is exists
-		Mall existMall = service.get(id);
+		//Che
 		 service.save(mall); 
 		}
 		catch(Exception e) {
