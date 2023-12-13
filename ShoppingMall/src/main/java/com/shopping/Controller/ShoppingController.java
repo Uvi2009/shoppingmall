@@ -16,13 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.shopping.Entity.Mall;
 import com.shopping.Service.ShoppingService;
 
-@CrossOrigin(origins = "http://localhost:3000",methods = {
-                RequestMethod.OPTIONS,
-                RequestMethod.GET,
-                RequestMethod.PUT,
-                RequestMethod.DELETE,
-                RequestMethod.POST
-})
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 public class ShoppingController {
 
